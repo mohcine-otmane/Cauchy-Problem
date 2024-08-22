@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
