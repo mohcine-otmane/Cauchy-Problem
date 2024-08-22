@@ -7,25 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Cauchy Problem Solver</h1>
-    
-    <label for="equation">Differential Equation (dy/dx = f(x, y)):</label>
-    <input type="text" id="equation" placeholder="Enter equation (e.g., x*y)" />
+    <div class="container">
+        <h1>Cauchy Problem Solver</h1>
+        
+        <div class="form-group">
+            <label for="equation">Differential Equation (dy/dx = f(x, y)):</label>
+            <input type="text" id="equation" placeholder="Enter equation (e.g., x*y + Math.cos(x))" />
+        </div>
 
-    <label for="y0">Initial Condition y(0) =</label>
-    <input type="number" id="y0" placeholder="Enter y0" />
+        <div class="form-group">
+            <label for="y0">Initial Condition y(0) =</label>
+            <input type="number" id="y0" placeholder="Enter y0" />
+        </div>
 
-    <label for="iterations">Number of Iterations:</label>
-    <input type="number" id="iterations" value="10" />
+        <div class="form-group">
+            <label for="iterations">Number of Iterations:</label>
+            <input type="number" id="iterations" value="10" />
+        </div>
 
-    <label for="interval">Interval (h):</label>
-    <input type="number" id="interval" step="0.01" value="0.1" />
+        <div class="form-group">
+            <label for="interval">Interval (h):</label>
+            <input type="number" id="interval" step="0.01" value="0.1" />
+        </div>
 
-    <button onclick="solveCauchyProblem()">Solve</button>
+        <button class="solve-button" onclick="solveCauchyProblem()">Solve</button>
 
-    <h2>Solution:</h2>
-    <pre id="solution"></pre>
-    <canvas id="solutionPlot"></canvas>
+        <div class="solution-container">
+            <h2>Solution:</h2>
+            <pre id="solution"></pre>
+        </div>
+
+        <canvas id="solutionPlot"></canvas>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
