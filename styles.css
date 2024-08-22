@@ -4,10 +4,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
@@ -17,6 +13,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
+    margin: 20px auto;
+    overflow: auto;
 }
 
 h1 {
@@ -66,6 +64,8 @@ input[type="number"] {
 
 .solution-container {
     margin-top: 20px;
+    max-height: 200px; /* Limit the height of the solution output */
+    overflow-y: auto; /* Make it scrollable if it overflows */
 }
 
 h2 {
