@@ -17,8 +17,8 @@ function solveCauchyProblem() {
         xValues.push(x.toFixed(2));
         yValues.push(y.toFixed(4));
 
-        // Parse and evaluate the equation
-        const fxy = eval(equationInput.replace(/x/g, x).replace(/y/g, y));
+        // Evaluate the equation with support for math functions
+        const fxy = eval(`with (Math) { ${equationInput.replace(/x/g, x).replace(/y/g, y)} }`);
         
         // Euler's method
         y = y + h * fxy;
