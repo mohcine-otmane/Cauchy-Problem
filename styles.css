@@ -1,26 +1,21 @@
 body {
-    background-color: #f5f7fa;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
+    width: 80%;
+    max-width: 900px;
     margin: 20px auto;
-    overflow: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 24px;
-    color: #007BFF;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -28,64 +23,34 @@ h1 {
     margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
-    font-size: 14px;
 }
 
-input[type="text"],
-input[type="number"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+.form-group input {
+    width: 100%;
+    padding: 8px;
     box-sizing: border-box;
 }
 
-.solve-button {
-    background-color: #007BFF;
-    color: #ffffff;
-    padding: 10px 20px;
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
     border: none;
-    border-radius: 4px;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.solve-button:hover {
-    background-color: #0056b3;
-}
-
-.solution-container {
-    margin-top: 20px;
-    max-height: 200px; /* Limit the height of the solution output */
-    overflow-y: auto; /* Make it scrollable if it overflows */
-}
-
-h2 {
-    font-size: 18px;
-    color: #007BFF;
-    margin-bottom: 10px;
-}
-
-pre {
-    background-color: #f0f0f0;
-    padding: 15px;
     border-radius: 4px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-x: auto;
+}
+
+button:hover {
+    background-color: #218838;
 }
 
 canvas {
-    max-width: 100%;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
 }
